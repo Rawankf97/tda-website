@@ -1,0 +1,79 @@
+@import url('https://fontlibrary.org/face/jellee-typeface');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'JelleeBold', sans-serif;
+}
+
+
+#navigation-menu {
+    height: 12%;
+    display: flex;
+    background-color: #ffffff;
+}
+
+#left-menu-bar {
+    display: flex;
+    flex-basis: 70%;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+#left-menu-bar ul {
+    margin-left: 20px;
+    z-index: 2; 
+    /* ????? */
+}
+
+#left-menu-bar ul li {
+    margin: 10px;
+    display: inline-block;
+}
+
+#left-menu-bar ul li a {
+    text-decoration: none;
+    color: #000000;
+    transition: ease-out 0.25s;
+}
+
+#left-menu-bar ul li a:hover {
+    color: #B92DC9;
+}
+
+#right-menu-bar {
+    flex-basis: 30%;
+    padding: 20px 50px;
+}
+
+#right-menu-bar ul {
+    float: right;
+}
+
+
+#right-menu-bar ul li {
+    margin: 10px;
+    display: inline-block;
+}
+
+#right-menu-bar ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+#get-started {
+    background-color: #1E35E8;
+    color: #ffffff !important; 
+    padding: 10px 20px;
+    border-radius: 20px;
+    /* box-sizing: border-box; */
+    /* text-decoration: none; */
+    transition: ease-out 0.3s;
+}
+
+#get-started:hover {
+    color:#000000 !important;
+    background-color:#FFFFFF;
+    border: #B92DC9 solid 2px;
+}
