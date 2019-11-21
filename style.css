@@ -1,4 +1,5 @@
 @import url('https://fontlibrary.org/face/jellee-typeface');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 * {
     padding: 0;
@@ -6,9 +7,16 @@
     font-family: 'JelleeBold', sans-serif;
 }
 
+/* to make footer stay at the bottom but it didn't work */
+/* body {
+    height: 100%;
+}
+
+main {
+    min-height: 100%;
+} */
 
 #navigation-menu {
-    height: 12%;
     display: flex;
     background-color: #ffffff;
 }
@@ -22,8 +30,6 @@
 
 #left-menu-bar ul {
     margin-left: 20px;
-    z-index: 2; 
-    /* ????? */
 }
 
 #left-menu-bar ul li {
@@ -43,7 +49,7 @@
 
 #right-menu-bar {
     flex-basis: 30%;
-    padding: 20px 50px;
+    padding: 30px 50px;
 }
 
 #right-menu-bar ul {
@@ -67,13 +73,206 @@
     color: #ffffff !important; 
     padding: 10px 20px;
     border-radius: 20px;
-    /* box-sizing: border-box; */
-    /* text-decoration: none; */
     transition: ease-out 0.3s;
 }
 
 #get-started:hover {
     color:#000000 !important;
     background-color:#FFFFFF;
-    border: #B92DC9 solid 2px;
+    /* border: #B92DC9 solid 2px; */
+    box-shadow: inset 0 0 0 2px #B92DC9;
+}
+
+#right-menu-bar ul li a {
+    text-decoration: none;
+    color: #000000;
+    transition: ease-out 0.25s;
+}
+
+#right-menu-bar ul li a:hover {
+    color: #B92DC9;
+}
+
+#headline {
+    height: 500px;
+    background-color: #000000;
+    color: #ffffff;
+    align-items: center;
+    /* border: 5px red solid; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+#headline > h1 {
+    /* border: 5px yellow solid; */
+    text-align: center;
+    font-size: 3.5em;
+    padding: 50px;
+    padding-bottom: 20px;
+    margin-top: 70px;
+    order: 1;
+}
+
+#headline > h2 {
+    padding: 10px;
+    margin-top: 20px;
+    /* border: 5px green solid; */
+    text-align: center;
+    order: 3;
+}
+
+#headline > h3 {
+    padding-bottom: 30px;
+    /* border: 5px blue solid; */
+    text-align: center;
+    order: 2;
+}
+
+#try-now {
+    color:#ffffff !important;
+    /* box-shadow: inset 0 0 0 2px #1E35E8; */
+    background-color: #B92DC9;
+    padding: 10px 50px;
+    border-radius: 50px;
+    transition: ease-out 0.3s;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#try-now:hover {
+    
+    background-color: #000000;
+    color: #ffffff !important; 
+    box-shadow: inset 0 0 0 2px #B92DC9;
+}
+
+main {
+    height: 250px;
+}
+
+footer {
+    background: #dfdfdf;
+    color: #494949;
+    height: 400px;
+    position: relative;
+}
+
+footer .footer-content {
+    display: flex;
+    height: 366px;
+    /* border: 2px solid rgb(156, 36, 36); */
+}
+
+footer .footer-content .footer-content-section {
+    flex: 1;
+    padding: 25px;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    margin: 20px;
+}
+
+footer .footer-content p {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-style: italic;
+    padding: 10px;
+}
+
+
+#find-us {
+    width: 350px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+    background: #494949;
+    border-radius: 20px;
+    padding: 4px 8px 4px 8px ;
+    transition: ease-out 0.2s;
+    margin: 0 5px;
+}
+#find-us ul {
+    margin-top: 10px;
+}
+#find-us ul li {
+    vertical-align: top;
+    display: inline;
+}
+.social-icon:hover {
+    background: #B92DC9;
+    border-radius: 20px;
+}
+
+.links h2 {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.links ul {
+    margin-left: 50px;
+}
+
+.links ul a {
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+    color: #494949;
+    transition: ease-in .2s;
+}
+
+.links ul a:hover {
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+    margin-left: 13px;
+    color: #1E35E8;
+}
+
+.contact h2 {
+    margin-top: 20px;
+}
+
+#contact-input {
+    width: 85%;
+    border-radius: 5px;
+    line-height: 1rem;
+    padding: 0.3rem 0.2rem 0.2rem 1rem;
+    font-family: sans-serif;
+    border: #494949 1px solid;
+}
+
+.contact form button {
+    background: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 15px;
+    width: 91%;
+    font-size: 1.2em;
+    border: transparent 1px solid;
+    transition: ease-out .2s;
+}
+
+.contact form button:hover {
+    background: #1E35E8;
+}
+
+
+
+.copyright-info {
+    background: #1E35E8;
+    color: #ffffff;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    /* padding-top: 8px; */
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-style: italic;
+    box-sizing: border-box;
 }
