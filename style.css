@@ -148,7 +148,8 @@ main {
 }
 
 main {
-    height: 250px;
+    height: 500px;
+    position: relative;
 }
 
 footer {
@@ -275,4 +276,92 @@ footer .footer-content p {
     font-size: 0.8em;
     font-style: italic;
     box-sizing: border-box;
+}
+
+.leftcolumn {
+  float: left;
+  width: 35%;
+}
+.rightcolumn {
+  float: left;
+  width: 65%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+background-color: white;
+padding: 50px;
+text-align: center;
+position: relative;
+background: -webkit-gradient(
+linear, left top, right bottom, color-stop(15%,#ffffff), color-stop(30%,#dfdfdf), color-stop(60%, #1E35E8), color-stop(100%,Violet)
+);
+background: moz-linear-gradient(
+top left, #ffffff 15%, #dfdfdf 30%,  #1E35E8 60%, Green 60%, Violet 100%);
+
+background: linear-gradient (45deg, #ffffff 15%, #dfdfdf 30%,  #1E35E8 60%, Violet 100%);
+}
+
+.formInput {
+width:200px; height:25px;
+}
+
+.featureLeft {
+  float: left;
+  background-color: black;
+  color: white;
+  font-size:1em;
+  width:330px;
+  height: 150px;
+  text-align: center;
+  left:25%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  vertical-align: middle;
+  line-height: 130px;      
+}
+
+.featureRight {
+  float: left;
+  background-color: black;
+  color: white;
+  font-size:1em;
+  width:330px;
+  height: 150px;
+  text-align: center;
+  left:75%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  vertical-align: middle;
+  line-height: 130px;      
+}
+
+.featureRight :hover , .featureLeft :hover {
+    color:white ;
+    background-color: #1E35E8;
+    /* border: #B92DC9 solid 2px; */
+    //box-shadow: inset 0 0 0 2px #B92DC9;
+}
+
+.featureRow {
+padding: 110px;
+text-align: center;
+position: relative;
+
+
+}
+
+/* Clear floats after the columns */
+.featureRow:after {
+  content: "";
+  display: table;
+  clear: both;
 }
